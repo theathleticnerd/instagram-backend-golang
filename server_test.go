@@ -21,7 +21,7 @@ req, err := http.NewRequest("GET", "/users/0", nil)
 		t.Errorf(" returned wrong status code: got %v want %v",
 			status, http.StatusOK)
 	}
-   expected := `{"UserID": 0,"Name": "NAVEEN","Email": "mknaveen837@gmail.com","Password": "14785269","Time": "2021-10-09T11:41:01.895Z"}`
+   expected := `{"UserID": 0,"Name": "Job","Email": "job@gmail.com","Password": "12345678","Time": "2021-10-09T11:41:01.895Z"}`
 	if rr.Body.String() != expected {
 		t.Errorf("handler returned unexpected body: got %v want %v",
 			rr.Body.String(), expected)

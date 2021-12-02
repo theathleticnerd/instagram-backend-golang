@@ -88,7 +88,7 @@ func handleRequest() {
 }
 
 func main() {
-	client, err := mongo.NewClient(options.Client().ApplyURI("mongodb+srv://naveen:jI5jrhnXHI8ibyQw@cluster1.ezz33.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"))
+	client, err := mongo.NewClient(options.Client().ApplyURI("mongodb+srv://job:y0SFqFVTmz9uDBEY@cluster0.xpnzm.mongodb.net/instaDB?retryWrites=true&w=majority"))
 
 	if err != nil {
 		log.Fatal(err)
